@@ -1,0 +1,20 @@
+<h1>${title}</h1>
+<ul>
+    ${data.map(waifu => `
+    <li>
+        <a href='./${waifu.slug}'><img src='/styles/images/${waifu.slug}.png' width='30px' height='30px'>${waifu.name}</a>
+    </li>`).join('')}
+</ul>
+
+${!!is_logged_in ? `
+<form action='/' method='POST'>
+    <label><br>
+        Add Your Waifu:<br>
+        <input type='text' name='waifu_name' placeholder='Waifu Name'/>
+    </label>
+    <label>
+        Origin:<br>
+        <input type='text' name='waifu_origin' placeholder='Where is she from?'/>
+    </label><br>
+    <button type='submit'>Add Waifu</button>
+</form>` : ''}

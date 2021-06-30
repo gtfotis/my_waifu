@@ -1,0 +1,16 @@
+<h1>${data.name}</h1>
+</br>
+<h3>${data.origin} </br>
+</h3>
+${!!data.name ? `<img src='/styles/images/${data.slug}.png' width='30%'>` :'' } ${!!is_logged_in ? `
+<form action='/' method='POST'>
+    <label><br>
+        Add Your Review:<br>
+        <input type="textarea" rows='4' name='text_review' placeholder='Write Your Review Here'/>
+    </label>
+    <label>
+        Waifu Score:<br>
+        <input type='number' name='waifu_score' placeholder='Score from 1-10'/>
+    </label><br>
+    <button type='submit'>Add Review</button>
+</form>` : '' }

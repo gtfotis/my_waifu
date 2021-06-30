@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    background-color: lavender;
+    width: 60%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 8%;
+}
+
+nav {
+    width: 100%!important;
+    background-color: lavender;
+    position: fixed!important;
+    top: 0!important;
+    border-radius: 5px;
+}
+
+main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
